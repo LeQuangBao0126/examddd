@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examination.Domain", "src\E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examination.Infrastructure", "src\Examination\Examination.Infrastructure\Examination.Infrastructure.csproj", "{27F31DC3-9DF8-4D48-BFD0-535459B9B1FB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{A784067A-BAD4-4096-BC49-7C7B131188F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examination.Dtos", "Examination.Dtos\Examination.Dtos.csproj", "{F4CFF4F8-E04D-4308-8CF2-4A94CE6D3C7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,11 +43,18 @@ Global
 		{27F31DC3-9DF8-4D48-BFD0-535459B9B1FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27F31DC3-9DF8-4D48-BFD0-535459B9B1FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27F31DC3-9DF8-4D48-BFD0-535459B9B1FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4CFF4F8-E04D-4308-8CF2-4A94CE6D3C7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4CFF4F8-E04D-4308-8CF2-4A94CE6D3C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4CFF4F8-E04D-4308-8CF2-4A94CE6D3C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4CFF4F8-E04D-4308-8CF2-4A94CE6D3C7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {77F30815-955C-45BB-A454-05B511857CF2}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F4CFF4F8-E04D-4308-8CF2-4A94CE6D3C7C} = {A784067A-BAD4-4096-BC49-7C7B131188F0}
 	EndGlobalSection
 EndGlobal
