@@ -10,8 +10,8 @@ namespace Examination.Infrastructure.Repositories ;
  
 public class ExamRepository : BaseRepository<Exam> , IExamRepository
 {
-    public ExamRepository(IMongoClient mongoClient, IClientSessionHandle clientSessionHandle, IOptions<ExamSettings> setting, IMediator mediator, string collection) : 
-        base(mongoClient, clientSessionHandle, setting, mediator, collection)
+    public ExamRepository(IMongoClient mongoClient, IClientSessionHandle clientSessionHandle, IOptions<ExamSettings> setting, IMediator mediator) : 
+        base(mongoClient, clientSessionHandle, setting, mediator, Constants.Collections.Exam)
     {
     }
     public async Task<IEnumerable<Exam>> GetExamListAsync()

@@ -8,7 +8,8 @@ namespace Examination.Infrastructure.Repositories;
 
 public class QuestionRepository : BaseRepository<Question> , IQuestionRepository
 {
-    public QuestionRepository(IMongoClient mongoClient, IClientSessionHandle clientSessionHandle, IOptions<ExamSettings> setting, IMediator mediator, string collection) : base(mongoClient, clientSessionHandle, setting, mediator, collection)
+    public QuestionRepository(IMongoClient mongoClient, IClientSessionHandle clientSessionHandle, IOptions<ExamSettings> setting, IMediator mediator) :
+        base(mongoClient, clientSessionHandle, setting, mediator, Constants.Collections.Question)
     {
     }
     
